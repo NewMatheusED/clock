@@ -1,23 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Clock</title>
-    <script src="clock.js" defer></script> 
     <link rel="stylesheet" href="clock.css">
 </head>
 <body>
-    <div class="clock">
-        <div class="hour">
-            <div class="hr" id="hr"></div>
-        </div>
-        <div class="min">
-            <div class="mn" id="mn"></div>
-        </div>
-        <div class="sec">
-            <div class="sc" id="sc"></div>
-        </div>
-    </div> 
-    <button class="botão-mudar">Mudar tema</button>
+    <div class="all">
+        <div class="clock">
+            <div class="hour">
+                <div class="hr" id="hr"></div>
+            </div><!--hour-->
+            
+            <div class="min">
+                <div class="mn" id="mn"></div>
+            </div><!--min-->
+            
+            <div class="sec">
+                <div class="sc" id="sc"></div>
+            </div><!--sec-->
+            
+        </div> <!--clock-->
+    </div><!--all-->
+
+    <div id="clock"></div>
+    <div id="currentDay"></div>
+    
+    <div class="toggle">
+        <label for="switch"></label>
+    </div><!--toggle-->
+
+    <div class="clockChange">
+        <p>Mudar relógio</p>
+    </div>
+
+    
+<script src="jquery.js"></script>
+<script src="clock.js"></script> 
 </body>
 </html>
